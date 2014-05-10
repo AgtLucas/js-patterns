@@ -18,5 +18,12 @@ var myRevealingModule = (function () {
   }
 
   // Reveal public pointers to private functions and properties
+  return {
+    setName: publicSetName,
+    greeting: publicVar,
+    getName: publicGetName
+  };
 
 }());
+
+myRevealingModule.setName('Lucas');
